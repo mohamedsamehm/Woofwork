@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #333339;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.container {
+  min-height: 100vh;
+  margin: auto;
+  max-width: 1613px;
+  padding: 40px 105px 40px 105px;
+  @media (max-width: 1200px) {
+    padding: 23px;
+  }
+}
+.tooltip {
+  border-radius: 16px;
+  background-color: #282d2f;
+  padding: 13px 15px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: right;
+  color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  left: 100%;
+  text-transform: initial;
+  width: 100%;
+  min-width: 170px;
+  display: none;
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #282d2f;
+    left: -20px;
+    top: calc(50% - 25px);
+  }
+}

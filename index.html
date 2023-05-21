@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-header">
+      <a target="_blank" href="https://www.WOOFools.io" class="logo"><img src="assets/imgs/logo.png" alt="Logo"></a>
+      <div class="dashboard-title-wrapper">
+        <h1 class="dashboard-title">Woofburn Dashboard</h1>
+      </div>
+      <div class="made-by">
+        <span>Made by</span>
+        <a target="_blank" href="https://bc.army/" class="img">
+          <img src="assets/imgs/scritta-bianco.png" alt="">
+          <img src="assets/imgs/scritta-bianco-mobile.png" hidden alt="">
+        </a>
+      </div>
+    </div>
+    <div class="widgets-wrapper">
+      <div class="widgets widgets-1">
+        <div class="currency">
+          <strong class="cu-type">Ethereum</strong>
+          <div class="cu-price"><span>1668$</span><small>(+1.21%)</small></div>
+        </div>
+        <a target="_blank"
+          href="https://www.WOOFools.io/app/en/bnb/pair-explorer/0x5bf6941f029424674bb93a43b79fc46bf4a67c21"
+          class="currency">
+          <strong class="cu-type">Bone</strong>
+          <div class="cu-price"><span>1668$</span><small>(+1.21%)</small></div>
+        </a>
+        <a target="_blank"
+          href="https://www.WOOFools.io/app/en/ether/pair-explorer/0xa29fe6ef9592b5d408cca961d0fb9b1faf497d6d"
+          class="currency">
+          <strong class="cu-type">Woof</strong>
+          <div class="cu-price"><span>1668$</span><small>(+1.21%)</small></div>
+        </a>
+        <a target="_blank"
+          href="https://www.WOOFools.io/app/en/ether/pair-explorer/0xa29fe6ef9592b5d408cca961d0fb9b1faf497d6d"
+          class="currency">
+          <strong class="cu-type">Woof/Eth</strong>
+          <div class="cu-price"><span>1668$</span><small>(+1.21%)</small></div>
+        </a>
+      </div>
+      <div class="widgets widgets-2">
+        <div class="widget">
+          <h2 class="chart-title">Daily Burn</h2>
+          <div class="daily-chart" id="daily-burn"></div>
+        </div>
+        <div class="widget">
+          <h2 class="chart-title">Daily Total Supply</h2>
+          <div class="daily-chart" id="daily-total-supply"></div>
+        </div>
+      </div>
+      <div class="widgets widgets-3">
+        <div class="widget">
+          <div class="widget-circle">
+            <div class="round-chart"></div>
+          </div>
+          <div class="widget-text">
+            <div class="widget-title-wrapper">
+              <h4 class="title">Burn Last 7 Days</h4>
+              <div class="number-wrapper">
+                <span class="number format">154500</span><small>WOOF</small>
+              </div>
+            </div>
+            <span class="supply-text"><span>0.110%</span> of supply</span>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="widget-circle">
+            <div class="round-chart"></div>
+          </div>
+          <div class="widget-text">
+            <div class="widget-title-wrapper">
+              <h4 class="title">Burn Last 30 Days</h4>
+              <div class="number-wrapper">
+                <span class="number format">154500</span><small>WOOF</small>
+              </div>
+            </div>
+            <span class="supply-text"><span>0.110%</span> of supply</span>
+          </div>
+        </div>
+      </div>
+      <div class="widgets widgets-4">
+        <a class="widget" target="_blank"
+          href="https://www.WOOFools.io/app/en/ether/pair-explorer/0xa29fe6ef9592b5d408cca961d0fb9b1faf497d6d">
+          <div class="widget-text">
+            <div class="number">14568</div>
+            <div>
+              <h6 class="title">Holders</h6>
+              <span>8 in 24h</span>
+            </div>
+          </div>
+          <div class="arrows arrows-top">
+            <img src="assets/imgs/arrows-top.svg" alt="">
+          </div>
+        </a>
+        <div class="widget">
+          <!-- <div class="widget-text">
+            <h5 class="title"><strong>Price</strong>of updating social
+              <div class="tooltip">Price to update social media links on WOOFools platform</div>
+            </h5>
+            <div>
+              <div class="number-parent">
+                <span class="number">2500</span><small>WOOF</small>
+              </div>
+              <div class="bottom-text">
+                <small>
+                  <span class="number">0.307</span> ETH
+                </small>
+                <small>30.3% discount</small>
+              </div>
+            </div>
+          </div>
+          <div class="arrows arrows-bottom">
+            <img src="assets/imgs/arrows-bottom.svg" alt="">
+          </div> -->
+        </div>
+        <a target="_blank"
+          href="https://etherscan.io/token/0xfb7b4564402e5500db5bb6d63ae671302777c75a?a=0x0000000000000000000000000000000000000000"
+          class="widget">
+          <div class="widget-text">
+            <div>
+              <h5 class="title"><strong>Total Burn</strong></h5>
+              <div class="number-parent">
+                <span class="number format">9010000</span><small>WOOF</small>
+              </div>
+            </div>
+            <div>
+              <h5 class="title"><strong>Expected</strong>Annual burn</h5>
+              <div class="number-parent">
+                <span class="number format">9010000</span><small>WOOF</small>
+              </div>
+            </div>
+          </div>
+          <div class="arrows arrows-top">
+            <img src="assets/imgs/arrows-top.svg" alt="">
+          </div>
+        </a>
+        <div class="widget">
+          <div class="widget-text">
+            <div>
+              <h5 class="title"><strong>Buy Pressure</strong>per month</h5>
+              <div class="number-parent">
+                <span class="number format">9010000</span><small>WOOF</small>
+              </div>
+              <div class="tooltip">Formula used<br>buy pressure = (1+buy_amount/liquidity)^2-1 where buy_amount =
+                daily buyback * 30</div>
+            </div>
+            <div>
+              <h5 class="title"><strong>Forecast price</strong>in 1 year</h5>
+              <div class="number-parent">
+                <span class="number format">9010000</span><small>WOOF</small>
+              </div>
+              <div class="tooltip">formula used<br>Future_price = (1+Buy_pressure *12)*current_price</div>
+            </div>
+          </div>
+          <div class="arrows arrows-bottom">
+            <img src="assets/imgs/arrows-bottom.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="widgets widgets-5">
+        <div class="widget-wrapper">
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+          <div class="widget">
+            <h6 class="name">0xsadlfja....asdj238h</h6>
+            <span class="number">1750</span>
+            <div class="last-text">WOOF<small>BURNED</small></div>
+          </div>
+        </div>
+        <div class="widget-burn">
+          <div class="form-header">
+            <img src="assets/imgs/WoofWork.png" alt="WoofWork">
+            <h4>How many WOOF do you wanna burn?</h4>
+          </div>
+          <div class="form-body">
+            <button class="decrement" id="burn-decrement"><i class="fa-solid fa-minus"></i></button>
+            <input type="number" id="burn-number" placeholder="1500,00" readonly>
+            <button class="increment" id="burn-increment"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <button type="submit">Burn</button>
+        </div>
+      </div>
+    </div>
+    <div class="last-update">
+      <p><strong>Last update:</strong> 15 seconds ago</p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js"
+    integrity="sha512-RLWwcf0Pb2NghIfkaQms354xRV36EYjXLWKSN8QHiHqNq3KGj0DjMc9D1zzO7UsREkGU/xCLAJi/hVcKSuZ5Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
